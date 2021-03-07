@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spinner_list_agent"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+
+                    android:background="@drawable/custom_spinner"
+                    android:drawSelectorOnTop="true"
+                    android:dropDownWidth="fill_parent"
+                    android:ems="10"
+                    android:hint="Current Currency"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"
+                    />
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/btn_assign_to"
+                style="@style/button"
+                android:text="@string/assign_to" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
